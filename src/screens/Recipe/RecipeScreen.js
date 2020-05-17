@@ -103,21 +103,36 @@ export default class RecipeScreen extends React.Component {
           </View>
 
           <View style={styles.infoContainer}>
-            <Image style={styles.infoPhoto} source={require('../../../assets/icons/time.png')} />
-            <Text style={styles.infoRecipe}>{item.time} minutes </Text>
-          </View>
-
-          <View style={styles.infoContainer}>
-            <ViewIngredientsButton
-              onPress={() => {
-                let ingredients = item.ingredients;
-                let title = 'Ingredients for ' + item.title;
-                navigation.navigate('IngredientsDetails', { ingredients, title });
-              }}
-            />
+            <Text style={styles.infoKey}>Histoire</Text>
+            <Text style={styles.infoValue}>{item.history}</Text>
           </View>
           <View style={styles.infoContainer}>
-            <Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
+            <Text style={styles.infoKey}>Style</Text>
+            <Text style={styles.infoValue}>{item.style}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Saveur</Text>
+            <Text style={styles.infoValue}>{item.taste}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Verre</Text>
+            <Text style={styles.infoValue}>{item.glass}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Glace</Text>
+            <Text style={styles.infoValue}>{item.ice}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Garnish</Text>
+            <Text style={styles.infoValue}>{item.garnish}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Recette</Text>
+            <Text style={styles.infoValue}>{item.description}</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Text style={styles.infoKey}>Présentaion</Text>
+            <Text style={styles.infoValue}>{item.presentation}</Text>
           </View>
         </View>
       </ScrollView>

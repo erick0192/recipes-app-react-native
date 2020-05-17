@@ -75,7 +75,7 @@ export default class SearchScreen extends React.Component {
   handleSearch = text => {
     var recipeArray1 = getRecipesByRecipeName(text);
     var recipeArray2 = getRecipesByCategoryName(text);
-    var recipeArray3 = getRecipesByIngredientName(text);
+    // var recipeArray3 = getRecipesByIngredientName(text);
     var aux = recipeArray1.concat(recipeArray2);
     var recipeArray = [...new Set(aux)];
     if (text == '') {
@@ -118,7 +118,7 @@ export default class SearchScreen extends React.Component {
           numColumns={2}
           data={this.state.data}
           renderItem={this.renderRecipes}
-          keyExtractor={item => `${item.recipeId}`}
+          keyExtractor={item => item.title}
         />
       </View>
     );

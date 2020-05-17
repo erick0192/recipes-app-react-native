@@ -59,7 +59,7 @@ export default class IngredientScreen extends React.Component {
             numColumns={2}
             data={getRecipesByIngredient(ingredientId)}
             renderItem={this.renderRecipes}
-            keyExtractor={item => `${item.recipeId}`}
+            keyExtractor={item => item.title}
           />
         </View>
       </ScrollView>

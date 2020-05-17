@@ -46,7 +46,7 @@ export default class RecipesListScreen extends React.Component {
           numColumns={2}
           data={recipesArray}
           renderItem={this.renderRecipes}
-          keyExtractor={item => `${item.recipeId}`}
+          keyExtractor={item => item.title}
         />
       </View>
     );

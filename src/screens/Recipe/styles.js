@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     fontSize: 16,
     marginTop: 30,
-    margin: 15
+    margin: 15,
   },
   infoRecipeName: {
     fontSize: 28,
@@ -83,7 +83,21 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center'
-  }
+  },
+  infoKey: {
+    textAlign: 'right',
+    fontSize: 16,
+    marginTop: 30,
+    margin: 15,
+    flex: 30
+  },
+  infoValue: {
+    textAlign: 'left',
+    fontSize: 16,
+    marginTop: 30,
+    margin: 15,
+    flex: 70
+  },
 });
 
 export default styles;

@@ -43,7 +43,7 @@ export default class HomeScreen extends React.Component {
           numColumns={2}
           data={recipes}
           renderItem={this.renderRecipes}
-          keyExtractor={item => `${item.recipeId}`}
+          keyExtractor={item => item.title}
         />
       </View>
     );
